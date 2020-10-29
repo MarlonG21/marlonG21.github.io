@@ -4293,7 +4293,7 @@ div.polaroid {
 	background-color: #41b0f0;
 	margin-bottom: 2%;
 	opacity: 0.5;
-	transition: all .3s ease-in-out;
+	transition: all .1s ease-in-out;
   }
 div.polaroid:hover{
 	opacity: 1;
