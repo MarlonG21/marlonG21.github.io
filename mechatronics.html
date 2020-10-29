@@ -8,6 +8,7 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="assets/css/animations.css">
 		<link rel="icon" href="hnet.com-image.ico">
+		<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload landing">
@@ -45,35 +46,35 @@
             <div id="mechatronicslibrary" class="librarycontainer" >
                 
 
-                <div  class="polaroid btn" data-modal="projectdetails1">
+                <div  class="polaroid btn" data-modal="projectdetails1" data-aos="fade-right" duration-aos="100ms">
                     <img id="project1" src="images/mobileRobot.JPG.jpg" alt="" style="width:100%">
                     <div class="textcontainer">
                     <p>Mobile Robot</p>
                     </div>
                   </div>
                   
-                  <div id="project2" class="polaroid btn" data-modal="projectdetails2">
+                  <div id="project2" class="polaroid btn" data-modal="projectdetails2" data-aos="fade-left" duration-aos="1000ms">
                     <img src="images/abb.jpg" alt="" style="width:100%">
                     <div class="textcontainer">
                     <p>ABB</p>
                     </div>
                   </div>
 
-                  <div id="project3" class="polaroid btn" data-modal="projectdetails3">
+                  <div id="project3" class="polaroid btn" data-modal="projectdetails3" data-aos="fade-right" duration-aos="1000ms">
                     <img src="images/cup_handling_project.PNG" alt="" style="width:100%">
                     <div class="textcontainer">
                     <p>Cup Handling</p>
                     </div>
                   </div>
 
-                  <div id="project4" class="polaroid btn" data-modal="projectdetails4">
+                  <div id="project4" class="polaroid btn" data-modal="projectdetails4" data-aos="fade-left" duration-aos="1000ms">
                     <img src="images/work-in-progress-png.png" alt="" style="width:100%">
                     <div class="textcontainer">
                     <p>Turtlebot Navigation</p>
                     </div>
 				  </div>
 				  
-                  <div id="project5" class="polaroid btn" data-modal="projectdetails5">
+                  <div id="project5" class="polaroid btn" data-modal="projectdetails5" data-aos="fade-right" duration-aos="100ms">
                     <img src="images/hmi.jpg" alt="" style="width:100%">
                     <div class="textcontainer">
                         <!-- <div class="overlayInfo">
@@ -171,5 +172,9 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+			<script>
+				AOS.init();
+			</script>
 	</body>
 </html>
