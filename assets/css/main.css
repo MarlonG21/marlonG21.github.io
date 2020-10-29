@@ -4292,13 +4292,13 @@ div.polaroid {
 	width: 80%;
 	background-color: #41b0f0;
 	margin-bottom: 2%;
-	opacity: 0.5;
+	opacity: 1;
 	transition: all .1s ease-in-out;
   }
-div.polaroid:hover{
+/* div.polaroid:hover{
 	opacity: 1;
 	transform: scale(1.05);
-}
+} */
 div.polaroid p
 {
   color: #ffff;
