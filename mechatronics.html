@@ -4,6 +4,7 @@
 		<title>My Portfolio</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<link rel="stylesheet" href="assets/css/animations.css">
 		<link rel="icon" href="hnet.com-image.ico">
@@ -37,41 +38,43 @@
 						</ul>
 					</nav>
 				</header>
-                </section>
+				</section>
+				
             <!-- Library of projects -->
-            
-            <div class="librarycontainer">
-                <h2>MECHATRONICS PROJECTS</h2>
+            <h2 class="librarytitle">MECHATRONICS PROJECTS</h2>
+            <div id="mechatronicslibrary" class="librarycontainer" >
+                
 
-                <div class="polaroid libraryitem">
-                    <img src="images/mobileRobot.JPG.jpg" alt="" style="width:100%">
+                <div  class="polaroid btn" data-modal="projectdetails1">
+                    <img id="project1" src="images/mobileRobot.JPG.jpg" alt="" style="width:100%">
                     <div class="textcontainer">
                     <p>Mobile Robot</p>
                     </div>
                   </div>
                   
-                  <div class="polaroid libraryitem">
+                  <div id="project2" class="polaroid btn" data-modal="projectdetails2">
                     <img src="images/abb.jpg" alt="" style="width:100%">
                     <div class="textcontainer">
                     <p>ABB</p>
                     </div>
                   </div>
 
-                  <div class="polaroid libraryitem">
+                  <div id="project3" class="polaroid btn" data-modal="projectdetails3">
                     <img src="images/cup_handling_project.PNG" alt="" style="width:100%">
                     <div class="textcontainer">
                     <p>Cup Handling</p>
                     </div>
                   </div>
 
-                  <div class="polaroid libraryitem">
+                  <div id="project4" class="polaroid btn" data-modal="projectdetails4">
                     <img src="images/work-in-progress-png.png" alt="" style="width:100%">
                     <div class="textcontainer">
                     <p>Turtlebot Navigation</p>
                     </div>
-                  </div>
-                  <div class="polaroid libraryitem">
-                    <img src="images/hmi.jpg" alt="" style="width:100%" class="image">
+				  </div>
+				  
+                  <div id="project5" class="polaroid btn" data-modal="projectdetails5">
+                    <img src="images/hmi.jpg" alt="" style="width:100%">
                     <div class="textcontainer">
                         <!-- <div class="overlayInfo">
                             <ul class="icons">
@@ -96,6 +99,68 @@
                 </footer>
                 
 		</div>
+		<!-- Project details -->
+		<div id="projectdetails1" class="modal">
+			<div class="projectcontent">
+				<span class="close">&times;</span>
+				<h2>Mobile Robot project</h2>
+				<iframe width="60%" height="350px"
+					src="https://youtube.com/embed/qaZm7sTNlWE?autoplay=1&mute=1">
+				</iframe>
+				<p>Find out more</p>
+				<a href="https://github.com/MarlonG21" class="icon brands alt fa-github" target="_blank"><span class="label">GitHub</span></a>
+				<a href="https://youtu.be/qaZm7sTNlWEE" class="fast-transition icon brands alt fa-youtube" target="_blank"><span class="label">GitHub</span></a>
+			</div>
+		</div>
+	 <div id="projectdetails2" class="modal">
+			<div class="projectcontent">
+				<span class="close">&times;</span>
+				<h2>ABB</h2>
+				<iframe width="60%" height="350px"
+					src="https://youtube.com/embed/P9Vzr46Byzw?autoplay=1&mute=1">
+				</iframe>
+				<p>Find out more</p>
+				<a href="https://github.com/MarlonG21" class="icon brands alt fa-github" target="_blank"><span class="label">GitHub</span></a>
+				<a href="https://youtu.be/P9Vzr46Byzw" class="icon brands alt fa-youtube" target="_blank"><span class="label">GitHub</span></a>
+			</div>
+		</div>
+		<div id="projectdetails3" class="modal">
+			<div class="projectcontent">
+				<span class="close">&times;</span>
+				<h2>Cup Handling Project</h2>
+				<iframe width="60%" height="350px"
+					src="https://youtube.com/embed/25sCUt5no8M?autoplay=1&mute=1">
+				</iframe>
+				<p>Find out more</p>
+				<a href="https://github.com/MarlonG21" class="icon brands alt fa-github" target="_blank"><span class="label">GitHub</span></a>
+				<a href="https://youtu.be/25sCUt5no8M" class="icon brands alt fa-youtube" target="_blank"><span class="label">GitHub</span></a>
+			</div>
+		</div>
+		<!-- <div id="projectdetails4" class="modal ">
+			<div class="projectcontent">
+				<span class="close">&times;</span>
+				<h2>Turtlebot Navigation</h2>
+				<iframe width="60%" height="350px"
+					src="https://youtube.com/embed/qaZm7sTNlWE?autoplay=1&mute=1">
+				</iframe>
+				<p>Find out more</p>
+				<a href="https://github.com/MarlonG21" class="icon brands alt fa-github" target="_blank"><span class="label">GitHub</span></a>
+				<a href="#" class="icon brands alt fa-youtube" target="_blank"><span class="label">GitHub</span></a>
+			</div>
+		</div> -->
+		<div id="projectdetails5" class="modal ">
+			<div class="projectcontent">
+				<span class="close">&times;</span>
+				<h2>PLC Programming</h2>
+				<iframe width="60%" height="350px"
+					src="https://youtube.com/embed/sdYfdx1qKcw?autoplay=1&mute=1">
+				</iframe>
+				<p>Find out more</p>
+				<a href="https://github.com/MarlonG21" class="icon brands alt fa-github" target="_blank"><span class="label">GitHub</span></a>
+				<a href="https://youtu.be/sdYfdx1qKcw" class="icon brands alt fa-youtube" target="_blank"><span class="label">GitHub</span></a>
+			</div>
+		</div>
+
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>

@@ -249,25 +249,53 @@
 
 })(jQuery);
 
+
 //Greeting  functionality 
-var greetings = document.getElementById("greetings");
-var  date = new Date();
-var hour = 0;
-function responsive_greeting()
-{    
-    hour = date.getHours();
-    // alert(hour);
-    if(hour>=18)
+// var greetings = document.getElementById("greetings");
+// var  date = new Date();
+// var hour = 0;
+// function responsive_greeting()
+// {    
+//     hour = date.getHours();
+//     // alert(hour);
+//     if(hour>=18)
+//     {
+//         greetings.innerText = "GOOD EVENING";
+//     }
+//     else if(hour>=13)
+//     {
+//         greetings.innerText = "GOOD AFTERNOON";
+//     }
+//     else  if(hour>=0)
+//     {   
+//         greetings.innerText= "GOOD MORNING";
+//     }
+// }
+// responsive_greeting();
+
+var modal_btns = document.querySelectorAll('.btn');
+
+modal_btns.forEach(function(btn){
+    btn.onclick = function(){
+        var modal = btn.getAttribute('data-modal');
+        document.getElementById(modal).style.display = "block";
+    };
+});
+
+var closeBtns = document.querySelectorAll('.close');
+
+
+closeBtns.forEach(function(btn){
+    btn.onclick = function(){
+
+        var modal = btn.closest('.modal').style.display = 'none';
+
+    };
+});
+
+window.onclick = function(e){
+    if(e.target.tagName === "modal")
     {
-        greetings.innerText = "GOOD EVENING";
+        e.target.style.display = "none";
     }
-    else if(hour>=13)
-    {
-        greetings.innerText = "GOOD AFTERNOON";
-    }
-    else  if(hour>=0)
-    {   
-        greetings.innerText = "GOOD MORNING";
-    }
-}
-responsive_greeting();
+};

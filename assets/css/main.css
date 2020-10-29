@@ -4255,14 +4255,23 @@ div.card_container
 
 .librarycontainer
 {
+   /* display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 25% 25%; */
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  flex-wrap: wrap;
-  padding-top: 5%;
+  flex-wrap: wrap; 
+   padding-top: 5%;
   margin-bottom:20%; 
 }
-.librarycontainer h2
+.librarytitle
+{
+	text-align: center;
+	margin-bottom: 5%;
+	margin-top: 5%;
+}
+.librarydescription
 {
 	text-align: center;
 }
@@ -4270,59 +4279,93 @@ div.card_container
 {
 	text-align: center;
 }
-.libraryitem
+.btn
 {
 	align-self: center;
 	align-items:  stretch;
+	transition: 2s ease;
 }
 
+
 div.polaroid {
-	width: 30%;
-	background-color: #4cace4;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-	margin-bottom: 25px;
+	
+	width: 80%;
+	background-color: #41b0f0;
+	margin-bottom: 2%;
+	opacity: 0.5;
+	transition: all .3s ease-in-out;
   }
-  
+div.polaroid:hover{
+	opacity: 1;
+	transform: scale(1.05);
+}
+div.polaroid p
+{
+  color: #ffff;
+  font-weight: 1000;
+  font-size: 6vw;
+  text-transform: uppercase;
+  margin-top: 10%;
+}
 div.textcontainer {
 	text-align: center;
-	padding-top: 2.5%;
 	padding-bottom: 0;
   }
+/* Project details */
+.modal {
+	
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	padding-top: 100px; /* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.6); /* Black w/ opacity */
+	transition: 1s ease-in-out;
+  }
+  
 
-/* .overlayinfo
+/* Project details Content */
+.projectcontent {
+	background-color: rgba(0,0,0,0.9);
+	margin: auto;
+	padding: 20px;
+	border: 1px solid #888;
+	width: 80%;
+	text-align: center;
+  }
+.projectcontent p
 {
-	transition: .5s ease;
-	display:none;
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	-ms-transform: translate(-50%, -50%)
+	color: #fff;
+	margin-top: 2%;
+}
+  
+  /* The Close Button */
+  .close {
+	color: #aaaaaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
   }
-  .overlayinfo .icons li
+  
+  .close:hover,
+  .close:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+  }
+
+  .modal .projectcontent a{
+	   font-size: 200%;
+	   padding-left: 1%;
+	   transition: all 1s ease-in-out;
+  }
+
+  .modal .projectcontent a:hover
   {
-	  display: none;
-	  position: relative;
-	  top: 50%;
-	  left: 50%;
+	  transform: scale(1.1);
   }
-  .image {
-	opacity: 1;
-	display: block;
-	width: 100%;
-	height: auto;
-	transition: .5s ease;
-	backface-visibility: hidden;
-  }
-
-  .libraryitem:hover .image {
-	opacity: 0.3;
-  }
-  .libraryitem:hover div.paraloid {
-	opacity: 0.3;
-  }
-  .libraryitem:hover .overlayinfo {
-	display:block;
-	opacity: 1;
-
-  } */
