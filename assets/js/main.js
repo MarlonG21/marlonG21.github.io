@@ -1,8 +1,6 @@
-/*
-	Landed by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-*/
+
+
+
 
 (function($) {
 
@@ -299,3 +297,24 @@ window.onclick = function(e){
         e.target.style.display = "none";
     }
 };
+
+
+var continuebrowsingbtn = document.getElementById('continuebrowsingbtn');
+var alertmessage = document.getElementById('alert');
+
+continuebrowsingbtn.onclick = function(){
+	if(alertmessage.style.visibility == 'hidden'){
+		alertmessage.style.visibility = 'visible';
+		//alertmessage.style.opacity = '1';
+		alertmessage.style.height = height + 'px';
+		alertmessage.style.width = width + 'px';
+		alertmessage.style.padding = '.5em';
+	  }
+	  else{
+		alertmessage.style.visibility = 'hidden';
+		//alertmessage.style.opacity = '0';
+		alertmessage.style.height = '0';
+		alertmessage.style.width = '0';
+		alertmessage.style.padding = '0';
+	  }
+}
