@@ -3641,11 +3641,14 @@ input, select, textarea {
 				padding: 4.5em;
 			}
 
+		
 		/* Footer */
 
 			#footer {
 				padding: 4.5em 0;
 			}
+
+		
 
 	}
 
@@ -4165,14 +4168,6 @@ input, select, textarea {
   padding-bottom: 5%;
   margin:0;
 }
-
-.chat:hover
-{
-  /* box-shadow: 0px 0px 30px rgba(255,255,255,0.6); */
-}
-
-
-
 input#wisdom 
 {
   padding: 2%;
@@ -4251,19 +4246,15 @@ div.card_container
 }
 
 
-/* Project library container */
 
+/* Projects layout for PCs */
 .librarycontainer
 {
-   /* display: grid;
-   grid-template-columns: 1fr 1fr;
-   grid-template-rows: 25% 25%; */
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  flex-wrap: wrap; 
-   padding-top: 5%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  padding-top: 5%;
   margin-bottom:20%; 
+  text-align: center;
 }
 .librarytitle
 {
@@ -4286,31 +4277,109 @@ div.card_container
 	transition: 2s ease;
 }
 
+.polaroidImage
+{
+	height: 80%;
+	overflow: hidden;
+	display: block;
+	object-fit: cover;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	opacity: 0.3;
+	transition: all 0.5s ease-in-out;
+}
 
-div.polaroid {
-	
+.polaroidImage:hover
+{
+	opacity: 1;
+}
+
+.polaroidImageResize
+{
+	height: 80% !important;
+}
+
+div.polaroid 
+{
+	height: 80%;
 	width: 80%;
 	background-color: #41b0f0;
-	margin-bottom: 2%;
+	border-radius: 10px;
+	margin-bottom: 5%;
+	margin-left: 10%;
 	opacity: 1;
-	transition: all .1s ease-in-out;
-  }
-/* div.polaroid:hover{
-	opacity: 1;
-	transform: scale(1.05);
-} */
+	/* transition: all .1s ease-in-out; */
+}
+
+div.polaroidResize 
+{
+	margin-top: 30%;
+	height: 110% !important;
+}
+
 div.polaroid p
 {
   color: #ffff;
   font-weight: 1000;
-  font-size: 6vw;
+  text-size-adjust: auto;
   text-transform: uppercase;
-  margin-top: 10%;
+  margin-top: 5%;
 }
-div.textcontainer {
+div.textcontainer 
+{
 	text-align: center;
-	padding-bottom: 0;
-  }
+	padding-top: -1%;
+}
+
+
+/* Projects layout for phones and tablets */
+@media screen and (max-width: 1024px){
+	.librarycontainer
+	{
+		display: flex !important;
+		flex-direction: column !important;
+		justify-content: flex-end !important;
+		flex-wrap: wrap !important; 
+		padding-top: 5% !important;
+		margin-bottom:20% !important; 
+	}
+	div.polaroid 
+	{
+		width: 80% !important;
+		background-color: #41b0f0;
+		margin-bottom: 2% !important;
+		margin-left: 0% !important;
+		opacity: 1;
+		/* transition: all .1s ease-in-out; */
+	}
+	div.polaroidResize 
+	{
+		margin-top: 0%;
+		height: 110% !important;
+	}
+	
+	div.polaroid p
+	{
+		color: #ffff;
+		font-weight: 1000;
+		font-size: 200% !important; 
+		text-transform: uppercase;
+		margin-top: 2.5% !important;
+	}
+	.btn
+	{
+		align-self: center;
+		align-items:  stretch;
+		transition: 2s ease;
+	}
+	div.textcontainer 
+	{
+		
+		text-align: center !important;
+		padding-top: 5% !important;
+	}
+
+}
 /* Project details */
 .modal {
 	
@@ -4365,10 +4434,10 @@ div.textcontainer {
 	   transition: all 1s ease-in-out;
   }
 
-  .modal .projectcontent a:hover
+  /* .modal .projectcontent a:hover
   {
 	  transform: scale(1.1);
-  }
+  } */
 
 
 /* ALERT MESSAGE */
@@ -4376,7 +4445,7 @@ div.textcontainer {
 {
 	/* display: block; */
 	position: fixed; /* Stay in place */
-	z-index: 50; /* Sit on top */
+	z-index: 70; /* Sit on top */
 	padding-top: 200px; /* Location of the box */
 	padding-left: 10%;
 	padding-right: 10%;
@@ -4491,4 +4560,10 @@ div.textcontainer {
   /* On smaller screens, decrease text size */
   @media only screen and (max-width: 300px) {
 	.prev, .next,.text {font-size: 11px}
+  }
+
+
+  #portfoglioImage
+  {
+	  filter:grayscale(70%) drop-shadow(30px 10px 4px #0000);
   }

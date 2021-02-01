@@ -346,10 +346,12 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
-let contentProject0 = document.getElementById("projectdetails0");
+currentSlide(1);
 
-if (contentProject0.style.display == "block")
-{
-	console.log("content visibile");
-}
-console.log(contentProject0.style.display);
+// let contentProject0 = document.getElementById("projectdetails0");
+
+// if (contentProject0.style.display == "block")
+// {
+// 	console.log("content visibile");
+// }
+// console.log(contentProject0.style.display);

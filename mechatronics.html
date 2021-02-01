@@ -35,6 +35,8 @@
 								</ul>
 							</li>
 							<li><a href="gettoknowme.html">Get to know me</a></li>
+							<li><a href="MecCV.html" target="_blank">Mechatronics CV</a></li>
+							<li><a href="DevCV.html" target="_blank">FrontEnd Dev CV</a></li>
 							<li><a href="contact.html" class="button primary">Contact</a></li>
 						</ul>
 					</nav>
@@ -45,51 +47,52 @@
             <h2 class="librarytitle">MECHATRONICS PROJECTS</h2>
             <div id="mechatronicslibrary" class="librarycontainer" >
 				
-				<div  class="polaroid btn" data-modal="projectdetails0" data-aos="fade-right" duration-aos="100ms">
-                    <img id="project1" src="images/robokitchen.webp" alt="" style="width:100%">
+				<div  class="polaroid btn"   data-modal="projectdetails0" data-aos="fade-right" duration-aos="100ms">
+                    <img id="project1" onclick="currentSlide(1)" class="polaroidImage" src="images/moley_polaroid.jpg" alt="" style="width:100%">
                     <div class="textcontainer">
                     <p>Moley Robotics</p>
                     </div>
                   </div>
 
                 <div  class="polaroid btn" data-modal="projectdetails1" data-aos="fade-right" duration-aos="100ms">
-                    <img id="project1" src="images/mobileRobot.JPG.jpg" alt="" style="width:100%">
+                    <img id="project1" class="polaroidImage" src="images/mobileRobot.JPG.jpg" alt="" style="width:100%">
                     <div class="textcontainer">
                     <p>Mobile Robot</p>
                     </div>
                   </div>
                   
                   <div id="project2" class="polaroid btn" data-modal="projectdetails2" data-aos="fade-left" duration-aos="1000ms">
-                    <img src="images/abb.jpg" alt="" style="width:100%">
+                    <img class="polaroidImage" src="images/abb.jpg" alt="" style="width:100%">
                     <div class="textcontainer">
                     <p>ABB</p>
                     </div>
                   </div>
 
                   <div id="project3" class="polaroid btn" data-modal="projectdetails3" data-aos="fade-right" duration-aos="1000ms">
-                    <img src="images/cup_handling_project.PNG" alt="" style="width:100%">
+                    <img class="polaroidImage" src="images/cup_handling_project.PNG" alt="" style="width:100%">
                     <div class="textcontainer">
                     <p>Cup Handling</p>
                     </div>
                   </div>
 
                   <div id="project4" class="polaroid btn" data-modal="projectdetails4" data-aos="fade-left" duration-aos="1000ms">
-                    <img src="images/work-in-progress-png (2).png" alt="" style="width:100%">
+                    <img class="polaroidImage" src="images/turtlebot-2-assembled-clearpathrobotics.jpg" alt="" style="width:100%">
                     <div class="textcontainer">
                     <p>Turtlebot Navigation</p>
                     </div>
 				  </div>
 				  
                   <div id="project5" class="polaroid btn" data-modal="projectdetails5" data-aos="fade-right" duration-aos="100ms">
-                    <img src="images/hmi.jpg" alt="" style="width:100%">
+                    <img class="polaroidImage" src="images/hmi.jpg" alt="" style="width:100%">
                     <div class="textcontainer">
-                        <!-- <div class="overlayInfo">
-                            <ul class="icons">
-                                <li><a href="https://www.linkedin.com/in/marlon-gwira-a2bb1310a/" class="icon brands fa-youtube" target="_blank"><span class="label">LinkedIn</span></a></li>
-                                <li><a href="https://github.com/MarlonG21" class="icon brands fa-github" target="_blank"><span class="label">GitHub</span></a></li>
-                            </ul>
-                        </div> -->
                     <p>PLC Programming</p>
+                    </div>
+				  </div>
+
+				  <div id="project6" class="polaroid polaroidResize btn" data-modal="projectdetails6" data-aos="fade-right" duration-aos="100ms">
+                    <img class="polaroidImage polaroidImageResize"  src="images/imeche2017.jpg" alt="" style="width:100%">
+                    <div class="textcontainer">
+                    <p>Imeche Challenge 2017</p>
                     </div>
                   </div>
             </div>
@@ -110,27 +113,66 @@
 		<div id="projectdetails0" class="modal">
 			<div class="projectcontent">
 				<span class="close">&times;</span>
-				<h2>Kitchen Sub-system</h2>
+				<h2>Moley Robotics</h2>
 
 				<div class="slideshow-container">
 
 					<div class="mySlides  fade">
-					  <div class="numbertext">1 / 3</div>
+					  <div class="numbertext">1 / 9</div>
 					  <img src="images/Fridge Front Top Right -D 2.jpg" style="width:100%">
 					  <div class="text">Fridge subsystem rendering</div>
 					</div>
 					
 					<div class="mySlides fade">
-					  <div class="numbertext">2 / 3</div>
+					  <div class="numbertext">2 / 9</div>
 					  <img src="images/Fridge tray.240.jpg" style="width:100%">
-					  <div class="text">Caption Two</div>
+					  <div class="text">Tray design concepts</div>
 					</div>
 					
 					<div class="mySlides fade">
-					  <div class="numbertext">3 / 3</div>
-					  <img src="images/Fridge Single Module_Isometric_Left.png" style="width:100%">
-					  <div class="text">Caption Three</div>
+					  <div class="numbertext">3 / 9</div>
+					  <img src="images/medium_tray_plastic.PNG" style="width:70%;">
+					  <div class="text">Medium tray plastic</div>
 					</div>
+
+					<div class="mySlides fade">
+						<div class="numbertext">4 / 9</div>
+						<img src="images/large_tray_containers.png" style="width:70%;">
+						<div class="text">Large tray with containers</div>
+					</div>
+
+					<div class="mySlides fade">
+						<div class="numbertext">5 / 9</div>
+						<img src="images/Sheetmetal_Tray_LargeFSR_2020-May-15_03-56-56PM-000_CustomizedView15885035755.png" style="width:60%">
+						<div class="text">Weight sensing tray concept</div>
+					  </div>
+
+					<div class="mySlides fade">
+						<div class="numbertext">6 / 9</div>
+						<iframe width="90%" height="400px"
+							src="./tray.html">
+						</iframe>
+						<div class="text">Tray with container(interactable 3D Moldel)</div>
+					</div>
+
+					<div class="mySlides fade">
+						<div class="numbertext">7 / 9</div>
+						<img src="images/medium_container.png" style="width:50%">
+						<div class="text">Medium container</div>
+					  </div>
+
+					<div class="mySlides fade">
+						<div class="numbertext">8 / 9</div>
+						<img src="images/long_container.png" style="width:50%">
+						<div class="text">Long container</div>
+					  </div>
+
+					  <div class="mySlides fade">
+						<div class="numbertext">9 / 9</div>
+						<img src="images/chicken_container.png" style="width:50%">
+						<div class="text">Chicken container</div>
+					  </div>
+					
 					
 					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 					<a class="next" onclick="plusSlides(1)">&#10095;</a>
@@ -138,15 +180,18 @@
 					</div>
 					<br>
 					
-					<div style="text-align:center">
+					<div style="text-align:center;display:none;">
 					  <span class="dot" onclick="currentSlide(1)"></span> 
 					  <span class="dot" onclick="currentSlide(2)"></span> 
-					  <span class="dot" onclick="currentSlide(3)"></span> 
+					  <span class="dot" onclick="currentSlide(3)"></span>
+					  <span class="dot" onclick="currentSlide(4)"></span> 
+					  <span class="dot" onclick="currentSlide(5)"></span> 
+					  <span class="dot" onclick="currentSlide(6)"></span>  
 					</div>
-				<h3>Fridge Rig</h3>
-				<p>This project is one of the projects I worked in as part of the hardware team <br>
+				<h3>Moley Projects</h3>
+				<p>Depicted above are some projects I worked in as part of the hardware team <br>
 				   I was tasked for the design and integration of the automated components as well as <br>
-				   overseeing the design of the main comtrol system of each unit.
+				   overseeing the design of through production.
 				</p>
 			</div>
 		</div>
@@ -157,7 +202,7 @@
 				<iframe width="60%" height="350px"
 					src="https://youtube.com/embed/qaZm7sTNlWE?autoplay=1&mute=1">
 				</iframe>
-				<p>Find out more</p>
+				<p>Find out more:</p>
 				<a href="https://github.com/MarlonG21" class="icon brands alt fa-github" target="_blank"><span class="label">GitHub</span></a>
 				<a href="https://youtu.be/qaZm7sTNlWEE" class="fast-transition icon brands alt fa-youtube" target="_blank"><span class="label">GitHub</span></a>
 			</div>
@@ -169,7 +214,7 @@
 				<iframe width="60%" height="350px"
 					src="https://youtube.com/embed/P9Vzr46Byzw?autoplay=1&mute=1">
 				</iframe>
-				<p>Find out more</p>
+				<p>Find out more:</p>
 				<a href="https://github.com/MarlonG21" class="icon brands alt fa-github" target="_blank"><span class="label">GitHub</span></a>
 				<a href="https://youtu.be/P9Vzr46Byzw" class="icon brands alt fa-youtube" target="_blank"><span class="label">GitHub</span></a>
 			</div>
@@ -181,23 +226,23 @@
 				<iframe width="60%" height="350px"
 					src="https://youtube.com/embed/25sCUt5no8M?autoplay=1&mute=1">
 				</iframe>
-				<p>Find out more</p>
+				<p>Find out more:</p>
 				<a href="https://github.com/MarlonG21" class="icon brands alt fa-github" target="_blank"><span class="label">GitHub</span></a>
 				<a href="https://youtu.be/25sCUt5no8M" class="icon brands alt fa-youtube" target="_blank"><span class="label">GitHub</span></a>
 			</div>
 		</div>
-		<!-- <div id="projectdetails4" class="modal ">
+		<div id="projectdetails4" class="modal ">
 			<div class="projectcontent">
 				<span class="close">&times;</span>
 				<h2>Turtlebot Navigation</h2>
 				<iframe width="60%" height="350px"
 					src="https://youtube.com/embed/qaZm7sTNlWE?autoplay=1&mute=1">
 				</iframe>
-				<p>Find out more</p>
+				<p>Find out more:</p>
 				<a href="https://github.com/MarlonG21" class="icon brands alt fa-github" target="_blank"><span class="label">GitHub</span></a>
-				<a href="#" class="icon brands alt fa-youtube" target="_blank"><span class="label">GitHub</span></a>
+				<!-- <a href="#" class="icon brands alt fa-youtube" target="_blank"><span class="label">GitHub</span></a> -->
 			</div>
-		</div> -->
+		</div>
 		<div id="projectdetails5" class="modal ">
 			<div class="projectcontent">
 				<span class="close">&times;</span>
@@ -205,12 +250,23 @@
 				<iframe width="60%" height="350px"
 					src="https://youtube.com/embed/sdYfdx1qKcw?autoplay=1&mute=1">
 				</iframe>
-				<p>Find out more</p>
+				<p>Find out more:</p>
 				<a href="https://github.com/MarlonG21" class="icon brands alt fa-github" target="_blank"><span class="label">GitHub</span></a>
 				<a href="https://youtu.be/sdYfdx1qKcw" class="icon brands alt fa-youtube" target="_blank"><span class="label">GitHub</span></a>
 			</div>
 		</div>
-
+		<div id="projectdetails6" class="modal ">
+			<div class="projectcontent">
+				<span class="close">&times;</span>
+				<h2>IMECHE Challenge 2017</h2>
+				<iframe width="60%" height="350px"
+					src="./imeche3.html">
+				</iframe>
+				<p>Find out more:</p>
+				<a href="https://github.com/MarlonG21" class="icon brands alt fa-github" target="_blank"><span class="label">GitHub</span></a>
+				<!-- <a href="" class="icon brands alt fa-youtube" target="_blank"><span class="label">GitHub</span></a> -->
+			</div>
+		</div>
 
 		<!-- Scripts -->
 			<script src="assets/js/jquery.min.js"></script>
