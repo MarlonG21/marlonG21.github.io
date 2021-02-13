@@ -2515,6 +2515,7 @@ input, select, textarea {
 		display: inline-block;
 		position: relative;
 		overflow: hidden;
+		background: black;
 	}
 
 		.image:before {
